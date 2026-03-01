@@ -1,0 +1,107 @@
+name: バグ報告
+description: バグや不具合を報告してください
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        バグ報告ありがとうございます。以下の項目をできるだけ詳しく記入してください。
+
+  - type: input
+    id: version
+    attributes:
+      label: バージョン
+      description: "OraDB DUMP Viewer のバージョン (ヘルプ > バージョン情報 で確認できます)"
+      placeholder: "例: 0.2.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      description: お使いの Windows のバージョン
+      options:
+        - Windows 11
+        - Windows 10
+        - Windows 8.1
+        - Windows 7
+        - その他
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install-type
+    attributes:
+      label: インストール形式
+      options:
+        - ポータブル版
+        - MSI インストーラー
+    validations:
+      required: true
+
+  - type: dropdown
+    id: dump-type
+    attributes:
+      label: DUMP 形式
+      description: 問題が発生した .dmp ファイルの形式 (わかる場合)
+      options:
+        - EXP (レガシー Export)
+        - EXPDP (DataPump)
+        - 不明
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: バグの説明
+      description: 何が起きたか簡潔に説明してください
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: バグを再現するための手順
+      placeholder: |
+        1. アプリを起動
+        2. .dmp ファイルを開く
+        3. テーブルを選択
+        4. エラーが表示される
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待する動作
+      description: 本来どのように動作すべきか
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の動作
+      description: 実際に起きたこと (エラーメッセージがあれば記載)
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: スクリーンショット
+      description: 問題を説明するスクリーンショットがあれば添付してください
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 補足情報
+      description: その他の関連情報
+    validations:
+      required: false

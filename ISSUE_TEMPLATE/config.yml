@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: セキュリティ脆弱性の報告
+    url: mailto:inquiry@ta-yan.ai
+    about: セキュリティ脆弱性は Issue ではなくメールで報告してください
+  - name: ライセンスに関するお問い合わせ
+    url: https://www.odv.dev/
+    about: ライセンスの取得・更新についてはこちら
