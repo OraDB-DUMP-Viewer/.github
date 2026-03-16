@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/OraDB-DUMP-Viewer/OraDB-DUMP-Viewer/releases"><img src="https://img.shields.io/github/v/release/OraDB-DUMP-Viewer/OraDB-DUMP-Viewer?label=%E6%9C%80%E6%96%B0%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3&style=flat-square" alt="Release"></a>
-  <img src="https://img.shields.io/badge/platform-Windows%20x64-blue?style=flat-square" alt="Platform">
+  <img src="https://img.shields.io/badge/platform-Windows%20x64%20%7C%20ARM64-blue?style=flat-square" alt="Platform">
   <img src="https://img.shields.io/badge/runtime-.NET%2010.0-purple?style=flat-square" alt=".NET 10">
   <a href="https://www.odv.dev/"><img src="https://img.shields.io/badge/%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9-www.odv.dev-green?style=flat-square" alt="License"></a>
 </p>
@@ -40,8 +40,8 @@
 
 | 配布形式 | 説明 |
 |---|---|
-| **ポータブル版** (推奨) | .NET ランタイム同梱。解凍してすぐ使える |
-| **MSI インストーラー** | 軽量。別途 .NET 10.0 が必要 |
+| **インストーラー** (推奨) | ショートカット・ファイル関連付け (.dmp) 付き。多言語対応 |
+| **ポータブル版** | 解凍してすぐ使える。レジストリ変更なし |
 
 ---
 
